@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eComicStore</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d117452c36.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <div id="banner" class="content">
+            <a href="#"><h1>free in-store pick up on everything online!</h1></a>
+        </div>
+        <div id="search-info" class="content">
+            <img src="imgs/Comic-PNG.png" alt="" style="height: 50px;">
+            
+            <div class="drop-down"><a href="#">Departments</a></div>
+
+            <div id="search-bar">
+                <input type="search" placeholder="Search">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div class="icons">
+                <a href="#">
+                    <i class="fa-regular fa-user"></i>
+                    <span>User</span>
+                </a>
+            </div>
+
+            <div class="icons">
+                <a href="">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>book</span>  
+                </a>
+            </div>
+
+            <div class="icons">
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>cart</span>  
+                </a>
+            </div>
+
+        </div>
+        <div id="nav-bar" class="content">
+            <a href="#">Free Shipping</a>
+            <a href="#">Weekly Releases <i class="fa-solid fa-caret-down"></i></a>
+            <a href="#">Track my order</a>
+            <a href="#">browsing history</a>
+            <a href="#">Save 50% with Pre orders</a>
+            <a href="#">Variants & Incentives</a>
+            <a href="#">Clearance</a>
+            <a href="#">We buy comics</a>
+        </div>
+    </header>
+    
+    <section class="section" id="sec-1">
+        <div class="container">
+
+            <div class="content" id="left-s1">
+                <div class="img-cont">
+                    <img src="imgs/skin.jpg">
+                </div>
+            </div>
+
+            <div class="content" id="right-s1">
+                <div class="title">
+                    <h2>Weekly Releases</h2>
+                </div>
+                <div class="slider-cont">
+                    <div class="slider">
+                        <img src="imgs/01.jpg">
+                        <img src="imgs/02.jpg">
+                        <img src="imgs/03.jpg">
+                        <img src="imgs/04.jpg">
+                        <img src="imgs/05.jpg">
+                    
+
+                        <div class="slider-nav">
+                            <button onclick="previousImage()">&#8249;</button>
+                            <button onclick="nextImage()">&#8250;</button>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-2">
+        <h1>New Releases</h1>
+        <div id="product-list">
+
+          <div class="product">
+            <img src="imgs/27.jpg" alt="Black Widow Vol 8" width="100" height="100">
+            <h3>Product 1</h3>
+            <p>Price: $25.00</p>
+            <label>Quantity:</label>
+            <input type="number" id="quantity-1" value="0" min="0">
+            <button onclick="addToCart(1)">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="imgs/26.jpg" alt="Betty & Veronica #1" width="100" height="100">
+            <h3>Product 2</h3>
+            <p>Price: $35.00</p>
+            <label>Quantity:</label>
+            <input type="number" id="quantity-2" value="0" min="0">
+            <button onclick="addToCart(2)">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="imgs/24.jpg" alt="Electra #121" width="100" height="100">
+            <h3>Product 3</h3>
+            <p>Price: $50.00</p>
+            <label>Quantity:</label>
+            <input type="number" id="quantity-3" value="0" min="0">
+            <button onclick="addToCart(3)">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="imgs/25.jpg" alt="Deathstroke #1 " width="100" height="100">
+            <h3>Product 4</h3>
+            <p>Price: $30.00</p>
+            <label>Quantity:</label>
+            <input type="number" id="quantity-4" value="0" min="0">
+            <button onclick="addToCart(4)">Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <img src="imgs/21.jpg" alt="SIKTC #21" width="100" height="100">
+            <h3>Product 5</h3>
+            <p>Price: $20.00</p>
+            <label>Quantity:</label>
+            <input type="number" id="quantity-5" value="0" min="0">
+            <button onclick="addToCart(5)">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="imgs/20.jpg" alt="SIKTC #22" width="100" height="100">
+            <h3>Product 6</h3>
+            <p>Price: $25.00</p>
+            <label>Quantity:</label>
+            <input type="number" id="quantity-6" value="0" min="0">
+            <button onclick="addToCart(6)">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="imgs/22.jpg" alt="SIKTC #23" width="100" height="100">
+            <h3>Product 7</h3>
+            <p>Price: $25.00</p>
+            <label>Quantity:</label>
+            <input type="number" id="quantity-7" value="0" min="0">
+            <button onclick="addToCart(7)">Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="imgs/17.jpg" alt="SIKTC #26" width="100" height="100">
+            <h3>Product 8</h3>
+            <p>Price: $22.00</p>
+            <label>Quantity:</label>
+            <input type="number" id="quantity-8" value="0" min="0">
+            <button onclick="addToCart(8)">Add to Cart</button>
+          </div>
+
+        </div>
+        
+        <div id="vc-container">
+            <button onclick="openCart()" id="vc-button">View Cart</button>
+        </div>
+     
+        <div id="cartModal" class="modal">
+          <div class="modal-content">
+            <h2>Shopping Cart</h2>
+            <div id="cartItems"></div>
+            <p id="totalPrice"></p>
+            <button onclick="checkout()" class="checkout">Checkout</button>
+            <button onclick="closeCart()" class="closeCart">Close</button>
+          </div>
+        </div>
+
+    </section> 
+
+    <section class="section" id="sec-3">
+        <div class="img-cont">
+            <a href="#"><img src="imgs/webuy-bnr.png"></a>
+        </div>
+    </section>
+
+    <section class="section" id="sec-4">
+        <div class="slider2">
+            <div class="slider-container2">
+              <div class="slider-track2">
+    
+                <div class="slider-item2">
+                  <a href="#">
+                    <img src="imgs/28.jpg" alt="Product 1">
+                  </a>
+                </div>
+    
+                <div class="slider-item2">
+                  <a href="#">
+                    <img src="imgs/29.jpg" alt="Product 2">
+                  </a>
+                </div>
+    
+                <div class="slider-item2">
+                  <a href="#">
+                    <img src="imgs/35.jpg" alt="Product 3">
+                  </a>
+                </div>
+    
+                <div class="slider-item2">
+                  <a href="#">
+                    <img src="imgs/30.jpg" alt="Product 4">
+                  </a>
+                </div>
+    
+                <div class="slider-item2">
+                    <a href="#">
+                      <img src="imgs/32.jpg" alt="Product 5">
+                    </a>
+                  </div>
+
+                  <div class="slider-item2">
+                    <a href="#">
+                      <img src="imgs/33.jpg" alt="Product 6">
+                    </a>
+                  </div>
+
+                  <div class="slider-item2">
+                    <a href="#">
+                      <img src="imgs/34.jpg" alt="Product 6">
+                    </a>
+                  </div>
+
+
+                  
+    
+              </div>
+            </div>
+            <button class="slider-prev2">&#8678;</button>
+            <button class="slider-next2">&#8680;</button>
+          </div>
+    </section>
+
+<footer>
+    <div class="cont-link">
+        <div class="links">
+            <div id="about-us">
+                <h2>About Us</h2>
+                <a href="#">contact Information</a>
+            </div>
+            <div id="downloads">
+                <h2>Download</h2>
+                <a href="#">
+                    <div class="img-cont">
+                        <img src="imgs/google-play-badge.png">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="img-cont">
+                        <img src="imgs/apple-download.png">
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="links">
+            <h2>Our Stores</h2>
+            <a href="#">Downtown</a>
+            <a href="#">Grand Central</a>
+            <a href="#">Times Square</a>
+        </div>
+        <div class="links">
+            <h2>Community</h2>
+            <a href="#">facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Tumblr</a>
+            <a href="#">Twitter</a>
+            <a href="#">Youtube</a>
+        </div>
+        <div class="links">
+            <h2>My Account</h2>
+            <a href="#">order Status</a>
+            <a href="#">Account Settings</a>
+            <a href="#">Subscription Settings</a>
+            <a href="#">Check Gift Card Balance</a>
+            <a href="#">Pull List FAQ</a>
+            <a href="#">Pull List</a>
+        </div>
+        <div class="links">
+            <h2>Customer Services</h2>
+            <a href="#">In Store Pick up</a>
+            <a href="#">Sitemap</a>
+            <a href="#">FAQ</a>
+        </div>
+    </div>
+    <div id="socials">
+        <a href="#">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </div>
+    <div id="created">
+        <span>Created by: Chris Hernandez HTML, CSS, JS</span>
+    </div>
+</footer>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
